@@ -1,0 +1,137 @@
+.movieRow{
+    margin-bottom: 30px;
+}
+
+.movieRow h2{
+    margin: 0px 0px 0px 30px;
+}
+.movieRow--listarea{
+    overflow-x: hidden;
+    padding-left: 30px;
+
+}
+
+.movieRow--item{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movieRow--list{
+    transition: all ease 0.2s;
+}
+
+.movieRow--item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+.movieRow--item img:hover{
+    transform: scale(1);
+}
+.movieRow--left,
+.movieRow--right{
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+.movieRow--left{
+    left: 0;
+}
+.movieRow--right{
+    right: 0;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right{
+    opacity: 1;
+    
+}
+
+.movieRow--list{
+    transition: all ease 0.4s;
+}
+
+@media (max-width: 760px){
+    .movieRow--left,
+    .movieRow--right{
+        opacity: 1;
+    }
+}
+
+
+/*Modal*/
+
+.movieRow--item--modal{
+    background-color: blueviolet;
+    height: 400px;
+    top: 0;
+   
+}
+
+
+.movie--row--featured--buttons{    
+    display: inline-block;
+    padding: 20px;
+    width: 500px;
+
+}
+
+.movie--row--featured--watchbutton{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 9px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    cursor: pointer;
+    top: 0;
+    transition: all ease 0.2s;
+  
+}
+
+.data-movie--row--featured{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.movie--row--featured--watchbutton:hover{
+    opacity: 0.7;
+}
+.movie--row--featured--watchbutton{
+    color: black;
+    background-color: white;
+}
+
+.movie--row--featured--mylistItens{
+    background-color: #141414;
+    padding: 12px;
+    border: 1px solid #FFFF;
+    border-radius: 100%;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    opacity: 1;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    text-align: center;
+
+}
+.movie--row--featured--mylistItens:hover{
+    opacity: 0.7;
+}
+
